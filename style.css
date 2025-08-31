@@ -1,0 +1,124 @@
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 50px auto;
+  text-align: center;  
+  background: linear-gradient(135deg, #2c2f36, #0f1115);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 30%;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  background: #f0f0f0;
+  margin: 25px auto;
+  border-radius: 20px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 20px;
+  color: #888888;
+}
+
+input[type="text"] {
+  color: #333333;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+  border-color: #10a37f;  
+  box-shadow: 0 2px 6px rgba(16, 163, 127, 0.3);
+  border-radius: 20px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 10px;
+  background: #10a37f;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0e8c6d;  
+  transform: scale(1.05); 
+}
+
+li.done .text {
+  text-decoration: line-through;
+  color: gray;
+
+}
+
+ul {
+  list-style: none;
+  padding-left: 45px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+li:hover {
+  background: #f9f9f9;          
+  transform: translateX(3px);    
+  border-radius: 20px;
+}
+
+li input[type="checkbox"]{
+  margin-right: 10px;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+li .delete {
+  color: #e63946;
+  margin-left: auto;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+li .delete:hover {
+  color: #c53030;     /* litt mørkere rød */
+  transform: scale(1.2);
+}
+
+li.fade-out {
+  opacity: 0;
+  transform: translateX(30px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
