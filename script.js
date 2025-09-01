@@ -18,15 +18,18 @@ button.addEventListener("click", () =>{
     const checkBox = document.createElement("input");
     checkBox.type = "checkbox";
 
-    //
+    //lagrer selvet teksten som brukeren har tastet inn
+    //men lager en span her for å holde teksten.
     const spanText = document.createElement("span");
     spanText.classList.add("text");
     spanText.textContent = text;
 
+    //lager en deleteknapp for å slette en oppgave.
     const deleteBtn = document.createElement("span");
     deleteBtn.textContent = "✖";
     deleteBtn.classList.add("delete");
 
+    //legger først checkboksen, deretter oppgaveteksten og mot slutten deleteknappen. 
     li.appendChild(checkBox);
     li.appendChild(spanText);
     li.appendChild(deleteBtn);
